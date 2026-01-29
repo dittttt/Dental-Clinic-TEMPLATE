@@ -54,17 +54,12 @@ export const Navigation: React.FC = () => {
           onClick={handleLogoClick}
           className="flex items-center gap-3 z-50 group"
         >
-           <div className="w-12 h-12 text-teal-600 group-hover:text-teal-700 transition-colors">
+           <div className="w-10 h-10 text-slate-900 group-hover:text-slate-700 transition-colors">
              <Logo className="w-full h-full" />
            </div>
-           <div className="flex flex-col">
-             <span className={`font-serif text-xl font-bold tracking-tight leading-none ${scrolled ? 'text-slate-900' : 'text-slate-900 lg:text-slate-900'}`}>
-               B&K
-             </span>
-             <span className={`text-xs uppercase tracking-widest font-medium ${scrolled ? 'text-slate-500' : 'text-slate-500 lg:text-slate-600'}`}>
-               Dental Clinic
-             </span>
-           </div>
+           <span className={`font-serif text-xl font-bold tracking-tight leading-none ${scrolled ? 'text-slate-900' : 'text-slate-900 lg:text-slate-900'}`}>
+             LOGO HERE
+           </span>
         </a>
 
         {/* Desktop Menu */}
@@ -131,10 +126,10 @@ export const Navigation: React.FC = () => {
           </Link>
           
           <a 
-            href="tel:09332366403"
+            href="#"
             className="flex items-center gap-2 text-slate-600 font-medium py-2"
           >
-            <Phone size={18} /> 0933 236 6403
+            <Phone size={18} /> PHONE NUMBER HERE
           </a>
           <Link 
             to="/booking"

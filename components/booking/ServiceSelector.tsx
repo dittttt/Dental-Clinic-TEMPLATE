@@ -32,7 +32,7 @@ export const ServiceSelector: React.FC<ServiceSelectorProps> = ({ selected, onSe
       title: 'Cleaning',
       icon: <Sparkles size={24} />,
       desc: 'Prophylaxis and stain removal.',
-      image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f72?auto=format&fit=crop&q=80&w=400',
+      image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=400', 
       color: 'text-teal-500',
       bg: 'bg-teal-50'
     },
@@ -78,22 +78,22 @@ export const ServiceSelector: React.FC<ServiceSelectorProps> = ({ selected, onSe
         ))}
       </div>
 
-      <FadeIn key={selected} className="bg-white rounded-2xl border border-slate-100 overflow-hidden flex flex-col md:flex-row shadow-sm">
-        <div className="md:w-1/3 h-32 md:h-auto relative">
-           <img src={selectedService.image} alt={selectedService.title} className="w-full h-full object-cover" />
+      <FadeIn key={selected} className="bg-white rounded-2xl border border-slate-100 overflow-hidden flex flex-col md:flex-row shadow-sm min-h-[240px]">
+        <div className="md:w-1/3 h-48 md:h-auto relative shrink-0">
+           <img src={selectedService.image} alt={selectedService.title} className="absolute inset-0 w-full h-full object-cover" />
            <div className="absolute inset-0 bg-slate-900/10" />
         </div>
-        <div className="p-5 md:w-2/3 flex flex-col justify-center">
-          <div className="flex items-center gap-2 mb-2">
-            <span className={`p-1.5 rounded-lg ${selectedService.bg} ${selectedService.color}`}>
+        <div className="p-6 md:w-2/3 flex flex-col justify-center">
+          <div className="flex items-center gap-2 mb-3">
+            <span className={`p-2 rounded-lg ${selectedService.bg} ${selectedService.color}`}>
               {selectedService.icon}
             </span>
-            <h4 className="font-bold text-lg text-slate-800">{selectedService.title} Service</h4>
+            <h4 className="font-bold text-xl text-slate-900">{selectedService.title} Service</h4>
           </div>
-          <p className="text-slate-600 text-sm mb-3">
-            {selectedService.desc} includes professional assessment by Dr. Kim Daclan.
+          <p className="text-slate-600 text-sm mb-4 leading-relaxed">
+            {selectedService.desc} includes a comprehensive assessment by DR. NAME HERE to ensure optimal oral health results.
           </p>
-          <div className="flex items-center gap-2 text-xs text-slate-400 bg-slate-50 p-2 rounded-lg self-start">
+          <div className="flex items-center gap-2 text-xs text-slate-400 bg-slate-50 p-2.5 rounded-lg self-start">
             <Info size={14} />
             <span>Duration varies by case severity</span>
           </div>

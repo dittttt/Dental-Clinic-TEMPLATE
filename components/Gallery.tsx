@@ -4,7 +4,7 @@ import { FadeIn } from './ui/FadeIn';
 export const Gallery: React.FC = () => {
   // Using placeholder images that represent the dental theme
   const images = [
-    "https://images.unsplash.com/photo-1606811971618-4486d14f3f72?auto=format&fit=crop&q=80&w=600",
+    "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=600",
     "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=600",
     "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&q=80&w=600",
     "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=600",
@@ -30,7 +30,7 @@ export const Gallery: React.FC = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-teal-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <p className="text-white font-serif font-bold text-lg">B&K Smile</p>
+                  <p className="text-white font-serif font-bold text-lg">CLINIC SMILE</p>
                 </div>
               </div>
             </FadeIn>

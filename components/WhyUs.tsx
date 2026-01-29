@@ -21,7 +21,7 @@ export const WhyUs: React.FC = () => {
                 className="rounded-2xl shadow-2xl relative z-10"
               />
               <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl z-20 hidden md:block">
-                <p className="text-teal-900 font-bold text-lg">Dr. Kim Daclan</p>
+                <p className="text-teal-900 font-bold text-lg">DR. NAME HERE</p>
                 <p className="text-teal-600 text-sm">Lead Dentist</p>
               </div>
               <div className="absolute top-6 -left-6 w-24 h-24 bg-teal-500/20 rounded-full -z-10" />
@@ -29,10 +29,10 @@ export const WhyUs: React.FC = () => {
           </FadeIn>
 
           <FadeIn delay={0.2}>
-            <h2 className="text-teal-400 font-bold tracking-wider uppercase text-sm mb-2">Why Choose B&K</h2>
+            <h2 className="text-teal-400 font-bold tracking-wider uppercase text-sm mb-2">Why Choose Us</h2>
             <h3 className="text-3xl lg:text-5xl font-serif font-bold mb-6">Your Comfort is Our Priority</h3>
             <p className="text-teal-100 text-lg mb-8 leading-relaxed">
-              At B&K Dental Clinic, we believe oral health is the foundation of overall health. 
+              At our clinic, we believe oral health is the foundation of overall health. 
               We don't just treat teeth; we treat people.
             </p>
 

@@ -8,20 +8,20 @@ export const FAQ: React.FC = () => {
 
   const faqs: FaqItem[] = [
     {
-      question: "Do you accept walk-in patients?",
-      answer: "No, B&K Dental Clinic operates on a strict appointment-only basis. This ensures we can dedicate our full attention and time to your treatment without rushing."
+      question: "Do you accept health insurance?",
+      answer: "We accept a variety of major health insurance providers. Please bring your card during your visit, or contact us beforehand to verify if your specific provider is covered."
     },
     {
-      question: "What are your operating hours?",
-      answer: "We are open Monday through Saturday from 9:00 AM to 5:00 PM. We are closed on Sundays."
+      question: "What payment methods do you accept?",
+      answer: "We accept cash, major credit/debit cards, and bank transfers. Installment plans may be available for major orthodontic or cosmetic procedures."
     },
     {
-      question: "Do you offer braces without tooth extraction?",
-      answer: "Yes! Dr. Kim Daclan specializes in non-extraction orthodontics, utilizing expanders and braces with proper case diagnosis to create beautiful, broad smiles without removing healthy teeth whenever possible."
+      question: "How long does a typical check-up and cleaning take?",
+      answer: "A standard cleaning and check-up usually takes about 45 minutes to an hour. We take our time to ensure a thorough cleaning and comprehensive examination."
     },
     {
-      question: "Where is the clinic located?",
-      answer: "We are located at Antigua's Place, S. Osmeña Street, Lapu-Lapu, 6015 Cebu (Postal Code 8X34+7F7)."
+      question: "Is the teeth whitening procedure painful?",
+      answer: "Most patients experience little to no sensitivity. We use modern, gentle whitening agents that protect your enamel while effectively removing stains."
     }
   ];
 

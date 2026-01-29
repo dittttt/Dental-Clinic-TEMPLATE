@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Clock, Mail, ExternalLink, Navigation } from 'lucide-react';
+import { MapPin, Phone, Clock, Mail, ExternalLink, Navigation, Map } from 'lucide-react';
 import { FadeIn } from './ui/FadeIn';
 
 export const LocationSection: React.FC = () => {
@@ -14,7 +14,7 @@ export const LocationSection: React.FC = () => {
             <h2 className="text-teal-600 font-bold tracking-wider uppercase text-sm mb-2">Visit Us</h2>
             <h3 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900">Find Our Clinic</h3>
             <p className="text-slate-600 mt-4 max-w-2xl mx-auto">
-              Conveniently located in the heart of Lapu-Lapu City. We offer ample parking and a comfortable waiting area.
+              Conveniently located in the heart of the city. We offer ample parking and a comfortable waiting area.
             </p>
           </div>
         </FadeIn>
@@ -32,7 +32,7 @@ export const LocationSection: React.FC = () => {
                  <div className="relative z-10 flex flex-col h-full">
                     
                     {/* Address Group */}
-                    <div className="p-6 border-b border-slate-100 hover:bg-slate-50/50 transition-colors">
+                    <div className="p-6 border-b border-slate-100 hover:bg-slate-50/50 transition-colors flex-1 flex flex-col justify-center">
                         <div className="flex gap-4 items-start">
                             <div className="flex-shrink-0 w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center text-teal-600 shadow-sm mt-1">
                                  <MapPin size={20} />
@@ -40,14 +40,10 @@ export const LocationSection: React.FC = () => {
                             <div>
                                 <h4 className="font-bold text-base text-slate-900 mb-2">Our Location</h4>
                                 <p className="text-slate-600 text-sm leading-relaxed mb-3">
-                                  2nd Floor, Antigua's Place,<br />
-                                  S. Osmeña Street, Gun-ob,<br />
-                                  Lapu-Lapu City, 6015
+                                  LOCATION HERE
                                 </p>
                                 <a 
-                                  href="https://maps.google.com/maps?q=Antigua's+Place+Lapu-Lapu+City" 
-                                  target="_blank" 
-                                  rel="noopener noreferrer"
+                                  href="#" 
                                   className="text-teal-600 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:text-teal-800 transition-colors border-b border-transparent hover:border-teal-600"
                                 >
                                   Get Directions <ExternalLink size={12} />
@@ -57,26 +53,26 @@ export const LocationSection: React.FC = () => {
                     </div>
 
                     {/* Contact Group */}
-                    <div className="p-6 border-b border-slate-100 hover:bg-slate-50/50 transition-colors">
+                    <div className="p-6 border-b border-slate-100 hover:bg-slate-50/50 transition-colors flex-1 flex flex-col justify-center">
                         <div className="flex gap-4 items-start">
                             <div className="flex-shrink-0 w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center text-teal-600 shadow-sm mt-1">
                                  <Phone size={20} />
                             </div>
                             <div>
                                 <h4 className="font-bold text-base text-slate-900 mb-2">Contact Details</h4>
-                                <p className="text-slate-900 font-bold text-lg mb-1 hover:text-teal-600 transition-colors">
-                                    <a href="tel:09332366403">0933 236 6403</a>
+                                <p className="text-slate-600 text-sm mb-1 hover:text-teal-600 transition-colors">
+                                    <a href="#">PHONE NUMBER HERE</a>
                                 </p>
-                                <p className="text-slate-500 text-xs mb-3">Available on Mobile & Viber</p>
-                                <a href="mailto:kimmakiling@yahoo.com" className="flex items-center gap-2 text-sm text-slate-600 hover:text-teal-600 transition-colors">
-                                    <Mail size={14} /> kimmakiling@yahoo.com
+                                <p className="text-slate-500 text-xs mb-3">Available on Mobile</p>
+                                <a href="#" className="flex items-center gap-2 text-sm text-slate-600 hover:text-teal-600 transition-colors">
+                                    <Mail size={14} /> EMAIL HERE
                                 </a>
                             </div>
                         </div>
                     </div>
 
                     {/* Hours Group */}
-                    <div className="p-6 hover:bg-slate-50/50 transition-colors flex-grow">
+                    <div className="p-6 hover:bg-slate-50/50 transition-colors flex-1 flex flex-col justify-center">
                         <div className="flex gap-4 items-start">
                             <div className="flex-shrink-0 w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center text-teal-600 shadow-sm mt-1">
                                  <Clock size={20} />
@@ -104,24 +100,16 @@ export const LocationSection: React.FC = () => {
           {/* Interactive Map */}
           <div className="lg:col-span-2 h-full min-h-[500px] lg:min-h-0">
             <FadeIn delay={0.3} className="h-full">
-              <div className="w-full h-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white relative group min-h-[500px]">
-                <iframe 
-                  width="100%" 
-                  height="100%" 
-                  style={{ border: 0, minHeight: '500px' }}
-                  loading="lazy"
-                  allowFullScreen
-                  referrerPolicy="no-referrer-when-downgrade"
-                  src="https://maps.google.com/maps?q=Antigua's+Place+Lapu-Lapu+City&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                  title="B&K Dental Clinic Location Map"
-                  className="grayscale-[0%] group-hover:grayscale-0 transition-all duration-500 w-full h-full"
-                ></iframe>
+              <div className="w-full h-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white relative group min-h-[500px] bg-slate-200 flex items-center justify-center">
+                 {/* Placeholder for Map */}
+                 <div className="text-center text-slate-400">
+                    <Map size={48} className="mx-auto mb-2 opacity-50"/>
+                    <p className="font-bold text-lg">MAP LOCATION HERE</p>
+                 </div>
                 
                 {/* Clickable Overlay Link */}
                 <a 
-                  href="https://maps.google.com/maps?q=Antigua's+Place+Lapu-Lapu+City" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                  href="#" 
                   className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm text-slate-800 text-xs font-bold px-4 py-3 rounded-xl shadow-lg border border-slate-200 flex items-center gap-2 hover:bg-slate-900 hover:text-white transition-all transform hover:scale-105 group-hover:shadow-xl"
                 >
                   <Navigation size={14} /> Open in Google Maps

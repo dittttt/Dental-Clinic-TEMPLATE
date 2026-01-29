@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {  } from 'react';
 import { Smile, Sparkles, HeartPulse, Stethoscope, ArrowRight } from 'lucide-react';
 import { FadeIn } from './ui/FadeIn';
 import { Link } from './SimpleRouter';
@@ -43,7 +43,7 @@ export const Services: React.FC = () => {
             <h2 className="text-teal-600 font-bold tracking-wider uppercase text-sm mb-2">Our Expertise</h2>
             <h3 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Comprehensive Care</h3>
             <p className="text-slate-600">
-              Personalized treatments by Dr. Kim Daclan. We combine modern dental science with a holistic approach to ensure your long-term health.
+              Personalized treatments by DR. NAME HERE. We combine modern dental science with a holistic approach to ensure your long-term health.
             </p>
           </div>
         </FadeIn>

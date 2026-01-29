@@ -16,17 +16,17 @@ export const Footer: React.FC = () => {
                  <Logo className="w-full h-full" />
                </div>
                <span className="font-serif text-2xl font-bold text-white tracking-tight">
-                 B&K
+                 LOGO HERE
                </span>
             </div>
             <p className="text-sm leading-relaxed text-slate-400 max-w-xs">
               Restoring confidence one smile at a time. Expert dental care combining modern technology with a holistic approach.
             </p>
             <div className="flex gap-4 pt-2">
-               <a href="https://www.facebook.com/BKDentalClinicLLC" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-800 rounded-full hover:bg-[#1877F2] hover:text-white transition-all transform hover:-translate-y-1">
+               <a href="#" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-800 rounded-full hover:bg-[#1877F2] hover:text-white transition-all transform hover:-translate-y-1">
                   <Facebook size={18} />
                </a>
-               <a href="https://www.instagram.com/bandkdentalclinic/?hl=en" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-800 rounded-full hover:bg-[#E4405F] hover:text-white transition-all transform hover:-translate-y-1">
+               <a href="#" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-800 rounded-full hover:bg-[#E4405F] hover:text-white transition-all transform hover:-translate-y-1">
                   <Instagram size={18} />
                </a>
              </div>
@@ -50,15 +50,15 @@ export const Footer: React.FC = () => {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="text-teal-500 flex-shrink-0 mt-1" size={18} />
-                <span>2nd Floor, Antigua's Place,<br/>Osmeña St, Gun-ob,<br/>Lapu-Lapu City, 6015</span>
+                <span>LOCATION HERE</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="text-teal-500 flex-shrink-0" size={18} />
-                <a href="tel:09332366403" className="hover:text-teal-400 transition-colors">0933 236 6403</a>
+                <a href="#" className="hover:text-teal-400 transition-colors">PHONE NUMBER HERE</a>
               </li>
               <li className="flex items-center gap-3">
                  <Mail className="text-teal-500 flex-shrink-0" size={18} />
-                 <a href="mailto:kimmakiling@yahoo.com" className="hover:text-teal-400 transition-colors break-all">kimmakiling@yahoo.com</a>
+                 <a href="#" className="hover:text-teal-400 transition-colors break-all">EMAIL HERE</a>
               </li>
             </ul>
           </div>
@@ -83,11 +83,11 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center text-xs text-slate-600 pt-4 border-t border-slate-800/50">
-          <p>&copy; {new Date().getFullYear()} B&K Dental Clinic. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Dental Clinic. All rights reserved.</p>
           <div className="mt-2 md:mt-0 flex items-center gap-6">
             <span className="flex items-center gap-1">
               <span className="w-1.5 h-1.5 bg-teal-500 rounded-full"></span>
-              Dr. Kim Daclan
+              DR. NAME HERE
             </span>
             <Link to="/admin" className="flex items-center gap-1 hover:text-teal-500 transition-colors opacity-50 hover:opacity-100">
               <Lock size={10} /> Admin

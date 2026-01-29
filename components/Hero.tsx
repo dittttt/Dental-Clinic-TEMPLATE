@@ -23,7 +23,7 @@ export const Hero: React.FC = () => {
         {/* Left Content */}
         <FadeIn className="space-y-8 text-center lg:text-left">
           <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-teal-100 text-teal-700 font-medium text-sm">
-            <Star size={14} fill="currentColor" /> 5.0 Rating (6 Reviews)
+            <Star size={14} fill="currentColor" /> 5.0 Rating (Based on reviews)
           </div>
           
           <h1 className="text-4xl lg:text-7xl font-serif font-bold text-slate-900 leading-[1.1]">
@@ -31,7 +31,7 @@ export const Hero: React.FC = () => {
           </h1>
           
           <p className="text-xl text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-            Experience expert dental care with <strong>Dr. Kim Daclan</strong>. Specializing in non-extraction orthodontics and holistic oral health. 
+            Experience expert dental care with <strong>DR. NAME HERE</strong>. Specializing in comprehensive dental solutions and holistic oral health. 
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -56,7 +56,7 @@ export const Hero: React.FC = () => {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="text-teal-500" size={20} />
-              <span>Expanders & Braces</span>
+              <span>Modern Treatments</span>
             </div>
             <div className="flex items-center gap-2">
                <CheckCircle2 className="text-teal-500" size={20} />
@@ -78,7 +78,7 @@ export const Hero: React.FC = () => {
               />
                {/* Floating Badge */}
               <div className="absolute bottom-8 left-8 bg-white/95 backdrop-blur px-6 py-4 rounded-2xl shadow-lg border border-teal-50">
-                 <p className="text-teal-900 font-serif font-bold text-xl">Dr. Kim Daclan</p>
+                 <p className="text-teal-900 font-serif font-bold text-xl">DR. NAME HERE</p>
                  <p className="text-teal-600 text-sm">Lead Dentist</p>
               </div>
             </div>
